@@ -22,9 +22,5 @@ $(function(){
   }
   
   $activeSlide.addClass("showing");
-
-    /* slides[currentSlide].className = 'slide';
-    currentSlide = (n+slides.length)%slides.length;
-    slides[currentSlide].className = 'slide showing'; */
   }
 });
