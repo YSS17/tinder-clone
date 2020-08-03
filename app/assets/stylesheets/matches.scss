@@ -5,4 +5,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+
+  p{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    margin: 0;
+    font-weight: bold;
+  }
 }
