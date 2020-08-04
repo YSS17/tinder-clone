@@ -1,13 +1,9 @@
-<div class="container">
-    <div class="row">
-      <% @matches.each do |match| %>
-        <div class="col-sm-4">
-          <% if match.image.present? %>
-            <div class="match-tile rounded" style="background-image: url('<%= url_for match.image %>')">
-                <p class="text-white"<%= match.first_name %></p>
-            </div>
-          <% end %>
-        </div>
-      <% end %>
-    </div>
-</div>
+<% @matches.each do |match| %>
+  <div class="col-sm-4 mt-3">
+    <% if match.image.present? %>
+      <div class="match-tile rounded" data-id="<%= match.id %>" style="background-image: url('<%= url_for match.image %>')">
+          <p class="text-white"><%= match.first_name %></p>
+      </div>
+    <% end %>
+  </div>
+<% end %>
