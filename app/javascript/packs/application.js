@@ -8,10 +8,9 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 
 require("bootstrap")
-require("../includes/slides.js")
 require("@fortawesome/fontawesome-free");
 
-require("../includes/matches.js")
+require("../includes/browse.js")
 
 
 
