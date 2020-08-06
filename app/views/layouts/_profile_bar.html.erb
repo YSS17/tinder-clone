@@ -1,3 +1,6 @@
-<div class="bg-danger">
-  <%= link_to "My Profile", "#", class: "d-block h3 text-white pl-4 pt-2 pb-2"%>
+<div class="bg-danger profile-bar">
+  <%= link_to "", class: "d-block h3 text-white pl-4 pt-2 pb-2" do %>
+    <%= image_tag current_account.images.first, width: "40px", heigth: "40px", class: "profile-thumb rounded-circle mr-2"%>
+    My Profile
+  <% end %>
 </div>
