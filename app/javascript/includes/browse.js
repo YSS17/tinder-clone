@@ -8,7 +8,11 @@ $(function(){
     console.log( account_id );
 
     $("#conversation").show();
-  })
+  });
+
+  $(".close-convasation").on("click", function() {
+    $("#conversation").hide();
+  });
 
   $("#decline").on("click", function() {
     goToSlide('decline');
