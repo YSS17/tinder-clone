@@ -5,12 +5,11 @@ $(function(){
 
    $(".match-tile").on("click", function(){
     var.account_id = $(this).data("id");
-    console.log( account_id );
 
     $("#conversation").show();
   });
 
-  $(".close-convasation").on("click", function() {
+  $(".close-conversation").on("click", function(){
     $("#conversation").hide();
   });
 
