@@ -1,15 +1,17 @@
 $(function(){
   var $activeSlide = $('#slides .slide:first-child');
 
-  $activeSlide.addClass("showing");
+  // $activeSlide.addClass("showing");
 
    $(".match-tile").on("click", function(){
-    var.account_id = $(this).data("id");
+    var account_id = $(this).data("id");
+    console.log( account_id );
 
     $("#conversation").show();
-  });
+    });
 
   $(".close-conversation").on("click", function(){
+    console.log("fechei")
     $("#conversation").hide();
   });
 
