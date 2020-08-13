@@ -5,12 +5,18 @@ $(function(){
 
    $(".match-tile").on("click", function(){
     var account_id = $(this).data("id");
-    console.log( account_id );
+
+
+    $.ajax({
+      url: "/get/conversation/"+account_id,
+      method: "post",
+      dataType: "script"
+    });
 
     $("#conversation").show();
     });
 
-  $(".close-conversation").on("click", function(){
+  $("#close-conversation").on("click", function(){
     console.log("fechei")
     $("#conversation").hide();
   });
