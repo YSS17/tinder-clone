@@ -1,1 +1,3 @@
-console.log("request for user profile has been made");
+
+$("#conversation").html("<%= escape_javascript(render partial: 'browse/conversation') %>").show();
+

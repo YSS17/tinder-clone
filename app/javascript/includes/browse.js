@@ -1,15 +1,23 @@
 $(function(){
   var $activeSlide = $('#slides .slide:first-child');
 
-  $activeSlide.addClass("showing");
+  // $activeSlide.addClass("showing");
 
    $(".match-tile").on("click", function(){
-    var.account_id = $(this).data("id");
+    var account_id = $(this).data("id");
 
-    $("#conversation").show();
-  });
 
-  $(".close-conversation").on("click", function(){
+    $.ajax({
+      url: "/get/conversation/"+account_id,
+      method: "post",
+      dataType: "script"
+    });
+
+    // $("#conversation").show();
+    });
+
+  $("#close-conversation").on("click", function(){
+    console.log("fechei")
     $("#conversation").hide();
   });
 
