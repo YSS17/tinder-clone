@@ -37,7 +37,7 @@ class BrowseController < ApplicationController
       if @profile.present?
         respond_to do |format|
           format.js{
-            render partial: "browse/conversation"
+            render "browse/conversation"
           }
       end
     end
