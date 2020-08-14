@@ -10,10 +10,10 @@ $(function(){
     $.ajax({
       url: "/get/conversation/"+account_id,
       method: "post",
-      dataType: "script"
+      dataType: "ajax"
     });
 
-    $("#conversation").show();
+    // $("#conversation").show();
     });
 
   $("#close-conversation").on("click", function(){
